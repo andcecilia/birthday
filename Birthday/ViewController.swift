@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     
     func throwConfetti() {
         confettiAnimationView.animation = confetti
+        confettiAnimationView.contentMode = .scaleAspectFill
         confettiAnimationView.loopMode = .playOnce
         confettiAnimationView.play()
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E12A03E288224F10099A229 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E12A03D288224F10099A229 /* confetti.json */; };
 		2E6094BC2880DD75001A6FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6094BB2880DD75001A6FEC /* AppDelegate.swift */; };
 		2E6094BE2880DD75001A6FEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6094BD2880DD75001A6FEC /* SceneDelegate.swift */; };
 		2E6094C02880DD75001A6FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6094BF2880DD75001A6FEC /* ViewController.swift */; };
@@ -14,10 +15,10 @@
 		2E6094C52880DD77001A6FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6094C42880DD77001A6FEC /* Assets.xcassets */; };
 		2E6094C82880DD77001A6FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6094C62880DD77001A6FEC /* LaunchScreen.storyboard */; };
 		2E6094D12880DEB0001A6FEC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2E6094D02880DEB0001A6FEC /* Lottie */; };
-		2E6094D7288109A8001A6FEC /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E6094D6288109A8001A6FEC /* confetti.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E12A03D288224F10099A229 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		2E6094B82880DD75001A6FEC /* Birthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6094BB2880DD75001A6FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6094BD2880DD75001A6FEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		2E6094C42880DD77001A6FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E6094C72880DD77001A6FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E6094C92880DD77001A6FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E6094D6288109A8001A6FEC /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		2E6094BA2880DD75001A6FEC /* Birthday */ = {
 			isa = PBXGroup;
 			children = (
-				2E6094D6288109A8001A6FEC /* confetti.json */,
+				2E12A03D288224F10099A229 /* confetti.json */,
 				2E6094BB2880DD75001A6FEC /* AppDelegate.swift */,
 				2E6094BD2880DD75001A6FEC /* SceneDelegate.swift */,
 				2E6094BF2880DD75001A6FEC /* ViewController.swift */,
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E6094C82880DD77001A6FEC /* LaunchScreen.storyboard in Resources */,
-				2E6094D7288109A8001A6FEC /* confetti.json in Resources */,
+				2E12A03E288224F10099A229 /* confetti.json in Resources */,
 				2E6094C52880DD77001A6FEC /* Assets.xcassets in Resources */,
 				2E6094C32880DD75001A6FEC /* Main.storyboard in Resources */,
 			);
