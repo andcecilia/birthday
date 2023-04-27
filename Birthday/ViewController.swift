@@ -91,7 +91,8 @@ class ViewController: UIViewController {
         stitchCakeImageView.snp.makeConstraints {
             $0.bottom.equalToSuperview().inset(72)
             $0.width.height.equalTo(160)
-            $0.centerX.equalToSuperview()        }
+            $0.centerX.equalToSuperview()
+        }
     }
     
     @objc func didTapHappyBirthdayButton(_ sender: UIButton!) {
