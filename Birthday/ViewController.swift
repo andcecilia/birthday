@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import SnapKit
 
 class ViewController: UIViewController {
     
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
     lazy var happyBirthdayButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Ceci", for: .normal)
+        button.setTitle("Happy Birthday!", for: .normal)
         button.setTitleColor(.red, for: .normal)
         button.addTarget(self, action: #selector(didTapHappyBirthdayButton(_:)), for: .touchUpInside)
         
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+        setupConstraints()
         erickImageView.isHidden = true
         stitchCakeImageView.isHidden = true
     }
@@ -73,19 +75,23 @@ class ViewController: UIViewController {
         view.addSubview(happyBirthdayButton)
         view.addSubview(stitchCakeImageView)
         view.addSubview(confettiAnimationView)
+    }
+    
+    func setupConstraints() {
+        erickImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(72)
+            $0.centerX.equalToSuperview()
+            $0.width.height.equalTo(160)
+        }
         
-        NSLayoutConstraint.activate([
-            erickImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 72),
-            erickImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            erickImageView.heightAnchor.constraint(equalToConstant: 160),
-            erickImageView.widthAnchor.constraint(equalToConstant: 160),
-            happyBirthdayButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            happyBirthdayButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            stitchCakeImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -72),
-            stitchCakeImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stitchCakeImageView.heightAnchor.constraint(equalToConstant: 160),
-            stitchCakeImageView.widthAnchor.constraint(equalToConstant: 160)
-        ])
+        happyBirthdayButton.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+        }
+        
+        stitchCakeImageView.snp.makeConstraints {
+            $0.bottom.equalToSuperview().inset(72)
+            $0.width.height.equalTo(160)
+            $0.centerX.equalToSuperview()        }
     }
     
     @objc func didTapHappyBirthdayButton(_ sender: UIButton!) {
@@ -101,8 +107,5 @@ class ViewController: UIViewController {
         confettiAnimationView.loopMode = .playOnce
         confettiAnimationView.play()
     }
-    
-    
-    
 }
 
