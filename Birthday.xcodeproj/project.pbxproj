@@ -15,6 +15,9 @@
 		2E6094C82880DD77001A6FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6094C62880DD77001A6FEC /* LaunchScreen.storyboard */; };
 		2E6094D12880DEB0001A6FEC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2E6094D02880DEB0001A6FEC /* Lottie */; };
 		2E8F6A1729FB227C0056DAEF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8F6A1629FB227C0056DAEF /* SnapKit */; };
+		2EC81E4829FF3AB1000423A3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC81E4729FF3AB1000423A3 /* Data.swift */; };
+		2EC81E4A29FF4358000423A3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC81E4929FF4358000423A3 /* DownloadService.swift */; };
+		2EC81E4C29FF4ED9000423A3 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC81E4B29FF4ED9000423A3 /* Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2E6094C42880DD77001A6FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E6094C72880DD77001A6FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E6094C92880DD77001A6FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC81E4729FF3AB1000423A3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2EC81E4929FF4358000423A3 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		2EC81E4B29FF4ED9000423A3 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,9 @@
 				2E6094C42880DD77001A6FEC /* Assets.xcassets */,
 				2E6094C62880DD77001A6FEC /* LaunchScreen.storyboard */,
 				2E6094C92880DD77001A6FEC /* Info.plist */,
+				2EC81E4729FF3AB1000423A3 /* Data.swift */,
+				2EC81E4929FF4358000423A3 /* DownloadService.swift */,
+				2EC81E4B29FF4ED9000423A3 /* Download.swift */,
 			);
 			path = Birthday;
 			sourceTree = "<group>";
@@ -150,9 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC81E4A29FF4358000423A3 /* DownloadService.swift in Sources */,
 				2E6094C02880DD75001A6FEC /* ViewController.swift in Sources */,
 				2E6094BC2880DD75001A6FEC /* AppDelegate.swift in Sources */,
+				2EC81E4C29FF4ED9000423A3 /* Download.swift in Sources */,
 				2E6094BE2880DD75001A6FEC /* SceneDelegate.swift in Sources */,
+				2EC81E4829FF3AB1000423A3 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
